@@ -1,0 +1,185 @@
+html{font-size:50%;}
+*{margin:0;padding:0;}
+/**
+header样式设置
+ */
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    height:8rem;
+    background-color: #5cc0cd;
+    z-index:100;
+}
+button{
+    border:none;
+    outline:none;
+}
+.btns>button,.dropdown>button,.img{
+    height:6rem;
+    margin:auto;
+    padding:0 0;
+}
+.btns{
+    position:absolute;
+    right:50%;
+    bottom:50%;
+    width:40%;
+    transform: translateX(55%) translateY(50%);
+    word-spacing: -0.6rem;
+}
+button.img{
+    position:absolute;
+    right:2rem;
+    bottom:50%;
+    transform: translateY(50%);
+    margin:auto;
+    width:5rem;
+    /*background-color:#5CC0CD;*/
+    background:url("site-larger.png") center center no-repeat;
+    background-size:65%;
+}
+.employer{
+    color:white;
+    font-size:2.5rem;
+    border-radius: 1rem;
+    background-color: #55A8B3;
+    width:50%;
+    display:inline-block;
+}
+.employee{
+    color:#5CC0CD;
+    font-size:2.5rem;
+    border-radius: 1rem;
+    background-color:white;
+    width:50%;
+    display:inline-block;
+}
+
+main{
+    padding-top:8rem;
+    padding-bottom:8rem;
+}
+/**
+footer样式设置
+ */
+footer{
+    position:fixed;
+    bottom:0;
+    height:8rem;
+    width:100%;
+    background-color:#F8FAFB;
+    z-index:100;
+    display:flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.footer>button{
+    background-color:#F8FAFB;
+    margin:0 8rem;
+    display:block;
+    flex:1;
+}
+.home,.memo,.person{
+    height:8rem;
+    width:8rem;
+}
+.home{
+    background:url("home.png")  center center no-repeat;
+    background-size:100%;
+}
+.memo{
+    background:url("memo.png")  center center no-repeat;
+    background-size:100%;
+}
+.person{
+    background:url("person.png")  center center no-repeat;
+    background-size:100%;
+}
+
+/**
+下面是list的样式表
+ */
+li{
+    width:100%;
+    border-bottom:0.1rem solid #999999;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    color:#999999;
+}
+li>div{
+    text-align: center;
+}
+.leftpart{
+    text-align: left;
+    padding:0.5rem 0 0.5rem 3rem;
+    font-size:3rem;
+}
+.ser-date{
+    background:url("spriteDemo.png")  no-repeat;
+    background-position:0 -135px;
+    padding-left:3.5rem;
+    margin:0.5rem 0;
+}
+.ser-site{
+    background:url("spriteDemo.png")  no-repeat;
+    background-position:0 -82px;
+    padding-left:3.5rem;
+    margin:0.5rem 0;
+}
+.time-cost{
+    display:inline-block;
+    padding-right:3rem;
+    margin:0;
+    color:black;
+    width:100%;
+}
+.duration{
+    padding-left:3.5rem;
+    width:70%;
+    float:left;
+}
+.cost{
+    background:url("left-arrow.png") right no-repeat;
+    padding-right:3rem;
+    color:red;
+    text-align:right;
+    width:30%;
+    float:left;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space: nowrap;
+}
+
+
+/*下面是使用bootstrap做出的下拉菜单*/
+.dropdown>button{
+    width:100%;
+    font-size:3rem;
+    position:relative;
+    left:50%;
+    transform: translateX(-50%);
+    background:url("down-arrow.png") right no-repeat;
+    color:#999999;
+}
+.dropdown-menu,.dropdown-item{
+    min-width:100%;
+    font-size:2rem;
+    text-align: center;
+    color:#999999;
+}
+.parent{
+    display:flex;
+    border-bottom:0.2rem solid #999999;
+}
+.dropdown{
+    flex:1;
+    margin:2% 0;
+    padding:0 0.5%;
+}
+#left,#mid{
+    border-right:0.2rem solid #999999;
+}
+
+
