@@ -150,6 +150,9 @@ li>div{
     text-align:right;
     width:30%;
     float:left;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space: nowrap;
 }
 
 
