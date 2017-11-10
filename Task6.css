@@ -9,7 +9,7 @@ header{
     width:100%;
     height:8rem;
     background-color: #5cc0cd;
-    z-index:100;
+    z-index:9999;
 }
 button{
     border:none;
@@ -69,7 +69,7 @@ footer{
     height:8rem;
     width:100%;
     background-color:#F8FAFB;
-    z-index:100;
+    z-index:9999;
     display:flex;
     justify-content: space-around;
     text-align: center;
@@ -139,6 +139,9 @@ li>div{
     padding-left:3.5rem;
     width:70%;
     float:left;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space: nowrap;
 }
 .cost{
     background:url("left-arrow.png") right no-repeat;
@@ -147,9 +150,6 @@ li>div{
     text-align:right;
     width:30%;
     float:left;
-    text-overflow:ellipsis;
-    overflow:hidden;
-    white-space: nowrap;
 }
 
 
@@ -168,9 +168,7 @@ li>div{
     font-size:3rem;
     text-align: center;
     color:#999999;
-}
-.dropdown-item{
-    margin:2rem 0;
+    margin:1rem 0;
 }
 .parent{
     display:flex;
@@ -178,7 +176,7 @@ li>div{
 }
 .dropdown{
     flex:1;
-    margin:2% 0;
+    margin:1rem 0;
     padding:0 0.5%;
 }
 #left,#mid{
